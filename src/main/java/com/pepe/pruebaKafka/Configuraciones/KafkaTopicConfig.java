@@ -13,5 +13,10 @@ public class KafkaTopicConfig {
 				.name("nombrecitoTpc")
 				.build();
 	}
-	
+	@Bean
+	public NewTopic DefinicionJsonTopic(){
+		return TopicBuilder
+				.name("jsonTpc")
+				.build();
+	}
 }
